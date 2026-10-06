@@ -1,9 +1,10 @@
 {
   "name": "adaptive-ex-remotion-preview",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "remotion studio src/index.ts",
+    "start": "remotion studio src/index.ts --port=3000",
+    "dev": "remotion studio src/index.ts --port=3000",
     "render": "remotion render src/index.ts AdaptiveEXPreview out/adaptive-ex-preview.mp4"
   },
   "dependencies": {

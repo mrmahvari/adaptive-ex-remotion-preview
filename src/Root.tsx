@@ -8,7 +8,7 @@ export const RemotionRoot: React.FC = () => {
     <Composition
       id="AdaptiveEXPreview"
       component={AdaptiveEXPreview}
-      durationInFrames={VIDEO.previewDuration}
+      durationInFrames={VIDEO.totalDuration}
       fps={VIDEO.fps}
       width={VIDEO.width}
       height={VIDEO.height}

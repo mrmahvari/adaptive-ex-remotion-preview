@@ -1,58 +1,61 @@
-# Adaptive EX — Remotion preview (first 10.5s)
+# Adaptive EX — Remotion V1
 
-This starter contains the first three approved scenes:
-
-1. Hook — 0:00–0:03.5
-2. Model T Logic — 0:03.5–0:07.0
-3. Bridge to Employee Experience — 0:07.0–0:10.5
-
-## Run
-
-```bash
-npm install
-npm run dev
-```
-
-Open the `AdaptiveEXPreview` composition in Remotion Studio.
-
-Render MP4:
-
-```bash
-npm run render
-```
+Full first-draft motion graphic for LinkedIn.
 
 ## Format
 
 - 1080 × 1350 (4:5)
 - 30 FPS
-- 315 frames / 10.5 seconds
-- Persian-first, English accents
+- 1410 frames
+- 47 seconds
+- Persian-first with English accent typography
 - Cream + Navy + Green
 - Vazirmatn via `@remotion/google-fonts`
 
+## Scenes
+
+1. Hook
+2. Model T Logic
+3. Bridge to Employee Experience
+4. Why Now
+5. Framework Reveal
+6. One-size-fits-all
+7. Segmentation
+8. Personalization
+9. Hyper-personalization
+10. Adaptive EX
+11. Beyond Onboarding
+12. Governance
+13. Final Shift / CTA
+
+## Run in StackBlitz
+
+Open:
+
+https://stackblitz.com/github/mrmahvari/adaptive-ex-remotion-preview
+
+If it does not auto-run, run:
+
+```bash
+npm start
+```
+
+Select `AdaptiveEXPreview` in Remotion Studio.
+
+## Render
+
+```bash
+npm run render
+```
+
 ## Model T asset
 
-The scene currently uses a remote public-domain 1908 Ford Model T image from Wikimedia Commons:
+The Model T scene uses a public-domain image from Wikimedia Commons:
 
 https://commons.wikimedia.org/wiki/File:Ford_Model_T_fra_1908.jpg
 
-Direct image URL used by the code:
+The current code uses the remote image URL. For deterministic rendering later, place the image in `public/images/` and switch the source to a local `staticFile()` asset.
 
-https://upload.wikimedia.org/wikipedia/commons/7/7f/Ford_Model_T_fra_1908.jpg
+## V1 status
 
-For deterministic/offline rendering later, download the image into `public/images/` and replace the remote URL in `src/data/script.ts` with `staticFile('images/your-file.jpg')`.
-
-## Next build pass
-
-After approving this 10.5-second visual language, continue with:
-
-- Why Now
-- 5-step Framework reveal
-- One-size-fits-all
-- Segmentation
-- Personalization
-- Hyper-personalization
-- Adaptive EX
-- Beyond onboarding
-- Governance
-- Final shift / CTA
+This is a full motion draft. Content wording, scene duration, copy density and micro-timing are intentionally still editable for the content-review pass.
